@@ -14,6 +14,76 @@ Assets = [
         ]
     },
     {
+        "dir":"/Audio/",
+        "contents":[
+            {
+                "grab":LolURL + "/Audio/blip.wav",
+                "writeto":{"dir":[],"file":"blip.wav"}
+            },
+            {
+                "grab":LolURL + "/Audio/blip_female.wav",
+                "writeto":{"dir":[],"file":"blip_female.wav"}
+            },
+            {
+                "grab":LolURL + "/Audio/deskslam.mp3",
+                "writeto":{"dir":[],"file":"deskslam.mp3"}
+            },
+        ]
+    },
+        {
+        "dir":"/Audio/Sound/",
+        "contents":[
+            {
+                "grab":LolURL + "/Audio/Sound/thwap.mp3",
+                "writeto":{"dir":[],"file":"thwap.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/badum.mp3",
+                "writeto":{"dir":[],"file":"badum.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/bang.mp3",
+                "writeto":{"dir":[],"file":"bang.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/chicken.mp3",
+                "writeto":{"dir":[],"file":"chicken.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/damage.mp3",
+                "writeto":{"dir":[],"file":"damage.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/damage2.mp3",
+                "writeto":{"dir":[],"file":"damage2.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/realization.mp3",
+                "writeto":{"dir":[],"file":"realization.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/gavel.mp3",
+                "writeto":{"dir":[],"file":"gavel.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/gavel%20quick.mp3",
+                "writeto":{"dir":[],"file":"gavel quick.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/guilty.mp3",
+                "writeto":{"dir":[],"file":"guilty.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/gallerycheer.mp3",
+                "writeto":{"dir":[],"file":"gallerycheer.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Sound/gallery.mp3",
+                "writeto":{"dir":[],"file":"gallery.mp3"}
+            },
+        ]
+    },
+    {
         "dir":"/assets/",
         "content":[
             {
@@ -81,25 +151,53 @@ Assets = [
                 "writeto":{"dir":[],"file":"VolumeControl-0c077af1.js"}
             },
             {
-                "grab":LolURL + "/AutoplayViewer-799d6c42.js",
+                "grab":LolURL + "/assets/AutoplayViewer-799d6c42.js",
                 "writeto":{"dir":[],"file":"AutoplayViewer-799d6c42.js"}
             },
             {
-                "grab":LolURL + "/Maker-5e923202.css",
+                "grab":LolURL + "/assets/Maker-5e923202.css",
                 "writeto":{"dir":[],"file":"Maker-5e923202.css"}
             },
             {
-                "grab":LolURL + "/PlayerCaseManager-2cb343fb.css",
+                "grab":LolURL + "/assets/PlayerCaseManager-2cb343fb.css",
                 "writeto":{"dir":[],"file":"PlayerCaseManager-2cb343fb.css"}
             },
             {
-                "grab":LolURL + "/PresentDialog-5b36edff.css",
+                "grab":LolURL + "/assets/PresentDialog-5b36edff.css",
                 "writeto":{"dir":[],"file":"PresentDialog-5b36edff.css"}
             },
             {
-                "grab":LolURL + "/CharacterPicker-4a65e0c7.css",
+                "grab":LolURL + "/assets/CharacterPicker-4a65e0c7.css",
                 "writeto":{"dir":[],"file":"CharacterPicker-4a65e0c7.css"}
             },
+            {
+                "grab":LolURL + "/assets/preloader-ebe69cf9.js",
+                "writeto":{"dir":[],"file":"CharacterPicker-4a65e0c7.css"}
+            },
+                        {
+                "grab":LolURL + "/assets/Background-c2b25f86.css",
+                "writeto":{"dir":[],"file":"Background-c2b25f86.css"}
+            },
+            {
+                "grab":LolURL + "/assets/preloader-90086c95.css",
+                "writeto":{"dir":[],"file":"preloader-90086c95.css"}
+            },
+            {
+                "grab":LolURL + "/assets/index-15def286.css",
+                "writeto":{"dir":[],"file":"index-15def286.css"}
+            },
+            {
+                "grab":LolURL + "/assets/index-fa8b38f8.css",
+                "writeto":{"dir":[],"file":"index-fa8b38f8.css"}
+            },
+            {
+                "grab":LolURL + "/assets/PlayerManager-a74711f7.css",
+                "writeto":{"dir":[],"file":"PlayerManager-a74711f7.css"}
+            },
+            {
+                "grab":LolURL + "/assets/Home-f4f51d96.css",
+                "writeto":{"dir":[],"file":"Home-f4f51d96.css"}
+            }
         ]
     },
     {
@@ -124,6 +222,39 @@ Assets = [
             {
                 "grab":LolURL + "/Images/Bubbles/5.png",
                 "writeto":{"dir":[],"file":"5.png"}
+            },
+        ]
+    },
+    {
+        "dir":"/Audio/Vocal/",
+        "content":[
+            {
+                "grab":LolURL + "/Audio/Vocal/1/1.mp3",
+                "writeto":{"dir":["1"],"file":"1.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Vocal/2/1.mp3",
+                "writeto":{"dir":["2"],"file":"1.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Vocal/3/1.mp3",
+                "writeto":{"dir":["3"],"file":"1.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Vocal/1/1.mp3",
+                "writeto":{"dir":["1"],"file":"1.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Vocal/2/2.mp3",
+                "writeto":{"dir":["2"],"file":"2.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Vocal/3/3.mp3",
+                "writeto":{"dir":["3"],"file":"3.mp3"}
+            },
+            {
+                "grab":LolURL + "/Audio/Vocal/5/2.mp3",
+                "writeto":{"dir":["5"],"file":"2.mp3"}
             },
         ]
     },
@@ -279,6 +410,103 @@ Assets = [
                 "grab":LolURL + "/Images/Characters/1/Yell_Talk.gif",
                 "writeto":{"dir":[],"file":"Yell_Talk.gif"}
             }
+        ]
+    },
+    {
+        "dir":"/Images/Characters/2/",
+        "content":[
+            {
+                "grab":LolURL + "/Images/Characters/2/icon.png",
+                "writeto":{"dir":[],"file":"icon.png"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Arms_Crossed.gif",
+                "writeto":{"dir":[],"file":"Arms_Crossed.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Arms_Crossed_Talk.gif",
+                "writeto":{"dir":[],"file":"Arms_Crossed_Talk.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Bow.gif",
+                "writeto":{"dir":[],"file":"Bow.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Bow_Idle.gif",
+                "writeto":{"dir":[],"file":"Bow_Idle.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Confident.gif",
+                "writeto":{"dir":[],"file":"Confident.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Confident_Talk.gif",
+                "writeto":{"dir":[],"file":"Confident_Talk.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Special_2.gif",
+                "writeto":{"dir":[],"file":"Special_2.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Special_1.gif",
+                "writeto":{"dir":[],"file":"Special_1.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Cornered.gif",
+                "writeto":{"dir":[],"file":"Cornered.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Cornered_Talk.gif",
+                "writeto":{"dir":[],"file":"Cornered_Talk.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Damage.gif",
+                "writeto":{"dir":[],"file":"Damage.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Desk_Stand.gif",
+                "writeto":{"dir":[],"file":"Desk_Stand.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Desk_Talk.gif",
+                "writeto":{"dir":[],"file":"Desk_Talk.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Desk_Slam.gif",
+                "writeto":{"dir":[],"file":"Desk_Slam.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Point_Stand.gif",
+                "writeto":{"dir":[],"file":"Point_Stand.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Point_Talk.gif",
+                "writeto":{"dir":[],"file":"Point_Talk.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Read.gif",
+                "writeto":{"dir":[],"file":"Read.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Read_Talk.gif",
+                "writeto":{"dir":[],"file":"Read_Talk.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Stand.gif",
+                "writeto":{"dir":[],"file":"Stand.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Stand_Talk.gif",
+                "writeto":{"dir":[],"file":"Stand_Talk.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Yell.gif",
+                "writeto":{"dir":[],"file":"Yell.gif"}
+            },
+            {
+                "grab": LolURL + "/Images/Characters/2/Yell_Talk.gif",
+                "writeto":{"dir":[],"file":"Yell_Talk.gif"}
+            },
         ]
     }
 ]

@@ -11,8 +11,12 @@ fileSep = '\\' if os.name == 'nt' else '/'
 def clearscrn():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+def TitleBar():
+    print(f"Objection.lol patcher ---- v{__version__} by Home")
+
 def error(message: str):
     clearscrn()
+    TitleBar()
     print("""
        __     ______                     
   _   / /    |  ____|                    
@@ -27,25 +31,25 @@ def error(message: str):
     print("Closing...")
     exit()
 
-def TitleBar():
-    print(f"Objection.lol patcher ---- v{__version__} by Home")
-
-def patcher():
+def downloader(repo, installDir):
     clearscrn()
     TitleBar()
-    InstallDir = input("Install Directory (. for this directory): ")
-    if InstallDir == ".":
-        InstallDir = os.getcwd()
-    if InstallDir[len(InstallDir) - 1] == "/" or InstallDir[len(InstallDir) - 1] == "\\":
+    if installDir == ".":
+        installDir = os.getcwd()
+    if installDir[len(installDir) - 1] == "/" or installDir[len(installDir) - 1] == "\\":
         error("Install Directory is invald (separator at the end)")
     print("Directory is valid")
-    print(f"{InstallDir}")
+    print(f"{installDir}")
     print("Grabbing...")
-    for i in data.Assets:
-        currMajDir: str = InstallDir + fileSep + i["dir"]
-        for j in i["content"]:
-            currMinDir: str = currMajDir + fileSep.join(j["writeto"]["dir"])
-            currFile: str = currMinDir + fileSep + j["writeto"]["file"]
+    for i in repo:
+        currMajDir: str = installDir + fileSep + i["dir"]
+        for j in range(0,len(i["content"])):
+            clearscrn()
+            TitleBar()
+            print("=== Downloader ===")
+            print("Downloading...")
+            currMinDir: str = currMajDir + fileSep.join(i["content"][j]["writeto"]["dir"])
+            currFile: str = currMinDir + fileSep + i["content"][j]["writeto"]["file"]
             
             if os.path.exists(currMinDir) != True:
                 os.makedirs(currMinDir)
@@ -53,20 +57,17 @@ def patcher():
                 temp_wrtr = open(currFile, "x")
                 temp_wrtr.close()
 
-            resp = requests.get(j["grab"])
-            if resp.ok != True:
-                error(f"Request to: {j["grab"]} failed with code {resp.status_code} reason: {resp.reason}")
+            print(f"Progress: {j} / {len(i['content'])} in {i["dir"]}")
+            print(f"Writing {currFile} at {i["content"][j]["grab"]}")
 
-            print(f"got [{resp.status_code}] ({resp.encoding})")
-            print(f"Writing {currFile}")
+            resp = requests.get(i["content"][j]["grab"])
+            if resp.ok != True:
+                error(f"Request to: {i["content"][j]["grab"]} failed with code {resp.status_code} reason: {resp.reason}")
 
             with open(currFile,"wb") as file:
                 file.write(resp.content)
         
-            print(f"Got {j["grab"]}")
-    print("All Done now.")
-    print("Exiting...")
-    exit()
+            print(f"Done {i["content"][j]["grab"]}")
     
     
 
@@ -90,8 +91,13 @@ def main(argv: list[str]):
 
     match input("Type here: "):
         case "1":
-            print("Working...")
-            patcher()
+            downloader(data.Assets, input("Install Directory (. for this directory): "))
+            clearscrn()
+            TitleBar()
+            print("+--+ FINISH +--+")
+            print("All Done now.")
+            print("Exiting...")
+            exit()
         case _:
             print("Working...")
             exit()
