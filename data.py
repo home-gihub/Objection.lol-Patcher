@@ -2,7 +2,7 @@ LolURL: str = "https://www.objection.lol"
 Assets = [
     {
         "dir":"/",
-        "content":[
+        "contents":[
             {
                 "grab":LolURL,
                 "writeto":{"dir":[],"file":"index.html"}
@@ -85,7 +85,7 @@ Assets = [
     },
     {
         "dir":"/assets/",
-        "content":[
+        "contents":[
             {
                 "grab":LolURL + "/assets/index-da2a1844.js",
                 "writeto":{"dir":[],"file":"index-da2a1844.js"}
@@ -202,7 +202,7 @@ Assets = [
     },
     {
         "dir":"/Images/Bubbles/",
-        "content":[
+        "contents":[
             {
                 "grab":LolURL + "/Images/Bubbles/1.png",
                 "writeto":{"dir":[],"file":"1.png"}
@@ -227,7 +227,7 @@ Assets = [
     },
     {
         "dir":"/Audio/Vocal/",
-        "content":[
+        "contents":[
             {
                 "grab":LolURL + "/Audio/Vocal/1/1.mp3",
                 "writeto":{"dir":["1"],"file":"1.mp3"}
@@ -260,7 +260,7 @@ Assets = [
     },
     {
         "dir":"/Images/Backgrounds/",
-        "content":[
+        "contents":[
             {
                 "grab":LolURL + "/Images/Backgrounds/Preset_Desk/[PW] Defense.png",
                 "writeto":{"dir":["Preset_Desk"], "file":"[PW] Defense.png"}
@@ -281,7 +281,7 @@ Assets = [
     },
     {
         "dir":"/Images/Characters/1/",
-        "content":[
+        "contents":[
             {
                 "grab":LolURL + "/Images/Characters/1/icon.png",
                 "writeto":{"dir":[],"file":"icon.png"}
@@ -414,7 +414,7 @@ Assets = [
     },
     {
         "dir":"/Images/Characters/2/",
-        "content":[
+        "contents":[
             {
                 "grab":LolURL + "/Images/Characters/2/icon.png",
                 "writeto":{"dir":[],"file":"icon.png"}
